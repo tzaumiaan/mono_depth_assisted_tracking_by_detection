@@ -30,7 +30,7 @@ The output folder will contains an aggregated `main.avi` for visualization.
 ## Acknowledgment 
 
 Great appreciation from the pretrained models and the training details from:
-- Object detection (v1.13.0): (GitHub link)[https://github.com/tensorflow/models/tree/v1.13.0/research/object_detection]
-- Struct2Depth (v1.13.0): (GitHub link)[https://github.com/tensorflow/models/tree/v1.13.0/research/struct2depth]
+- Object detection (v1.13.0): [GitHub link](https://github.com/tensorflow/models/tree/v1.13.0/research/object_detection)
+- Struct2Depth (v1.13.0): [GitHub link](https://github.com/tensorflow/models/tree/v1.13.0/research/struct2depth)
 
-KITTI dataset source: (Dataset link)[http://www.cvlibs.net/datasets/kitti/raw_data.php]
+KITTI dataset source: [Dataset link](http://www.cvlibs.net/datasets/kitti/raw_data.php)
