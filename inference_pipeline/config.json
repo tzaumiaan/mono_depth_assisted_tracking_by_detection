@@ -1,0 +1,35 @@
+{
+  "detector":{
+    "name": "det",
+    "path": "../model_archive/ssd_mobilenet_v1_coco_2018_01_28",
+    "using_pb": true,
+    "pb_file": "frozen_inference_graph.pb",
+    "ckpt_name": "model.ckpt",
+    "score_threshold": 0.5
+  },
+  "estimator":{
+    "name": "est",
+    "path": "../model_archive/struct2depth_model_kitti",
+    "using_pb": true,
+    "pb_file": "frozen_inference_graph.pb",
+    "ckpt_name": "model.ckpt",
+    "img_height": 128,
+    "img_width": 416,
+    "pixel2meter_scale": 13.3
+  },
+  "tracker":{
+    "bbox_cov": 5,
+    "depth_cov": 15
+  },
+  "input":{
+    "path": "../data/kitti/20110926/image",
+    "clip": "0056",
+    "max_frames": 10000
+  },
+  "output":{
+    "path": "output",
+    "vis_en": true,
+    "vis_fps": 10,
+    "csv_en": true
+  }
+}
